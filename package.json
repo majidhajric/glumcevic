@@ -1,0 +1,20 @@
+{
+  "name": "glumcevic",
+  "version": "1.0.0",
+  "description": "corporate site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw": "npx tailwindcss -i ./src/style.css -o ./dist/style.css",
+    "tw-watch": "npx tailwindcss -i ./src/style.css -o ./dist/style.css --watch",
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^10.0.1"
+  },
+  "author": "majidhajric@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Glumcevic</title>
+    <meta name="description" content="corporate site">
+    >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/style.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100">
+<header class="left-0 top-0 z-50 w-full bg-white lg:overflow-hidden fixed bg-opacity-80 shadow-sm backdrop-blur-sm">
+    <div class="container mx-auto">
+        <div class="relative -mx-4 flex items-center justify-between">
+            <div class="relative z-10 w-60 max-w-full px-4 py-3">
+                <a href="javascript:void(0)" class="block w-full">
+                    <img src="assets/images/logo/logo.jpg" alt="logo" class="w-full">
+                </a>
+                <span class="absolute right-0 top-1/2 z-[-1] h-full w-[1000%] -translate-y-1/2 bg-transparent lg:h-[150%]"></span>
+            </div>
+            <div class="flex w-full items-center justify-between px-4">
+                <div>
+                    <button id="navbarToggler"
+                            class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                        <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                        <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                        <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
+                    </button>
+                    <nav class="absolute right-4 top-full z-20 w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none hidden">
+                        <ul class="blcok lg:flex">
+                            <li>
+                                <a href="javascript:void(0)"
+                                   class="flex border-transparent py-2 text-base font-medium text-dark hover:border-primary hover:text-primary lg:ml-12 lg:inline-flex lg:border-t lg:py-7">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   class="flex border-transparent py-2 text-base font-medium text-dark hover:border-primary hover:text-primary lg:ml-12 lg:inline-flex lg:border-t lg:py-7">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   class="flex border-transparent py-2 text-base font-medium text-dark hover:border-primary hover:text-primary lg:ml-12 lg:inline-flex lg:border-t lg:py-7">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
+                    <div class="flex items-center">
+                        <div class="flex h-11 min-w-[44px] items-center justify-center rounded-full bg-primary text-white">
+                            <svg width="20" height="20" viewBox="0 0 20 20" class="fill-current">
+                                <path d="M15.3437 19.156C12.7812 19.156 9.09373 17.3123 5.71873 14.0935C1.12498 9.7185 -0.843773 4.8435 1.15623 2.7185C1.24998 2.62475 1.34373 2.56225 1.46873 2.49975L4.09373 1.031C4.68748 0.718502 5.43748 0.874752 5.81248 1.406L7.71873 4.12475C7.90623 4.406 7.99998 4.74975 7.93748 5.06225C7.87498 5.406 7.68748 5.68725 7.40623 5.87475L6.24998 6.62475C6.18748 6.656 6.18748 6.68725 6.18748 6.7185C6.18748 6.74975 6.18748 6.781 6.21873 6.81225C7.06248 8.06225 9.46873 11.2498 13.2812 13.531C13.375 13.5935 13.5312 13.5623 13.5937 13.4998L14.4062 12.406C14.8125 11.8435 15.5937 11.7185 16.1875 12.0935L19.0312 13.906C19.625 14.281 19.8125 15.031 19.4375 15.6248L17.875 18.1248C17.8125 18.2498 17.7187 18.3435 17.625 18.406C17.0312 18.9373 16.25 19.156 15.3437 19.156ZM4.74998 1.93725C4.71873 1.93725 4.68748 1.93725 4.62498 1.9685L1.99998 3.43725C1.96873 3.4685 1.96873 3.4685 1.93748 3.4685C0.624977 4.87475 2.12498 9.156 6.49998 13.3123C10.875 17.4685 15.4062 18.906 16.9062 17.6248C16.9062 17.6248 16.9062 17.6248 16.9375 17.5935L18.5 15.0935C18.5312 15.031 18.5312 14.9373 18.4375 14.8748L15.5937 13.0623C15.5 12.9998 15.3437 13.031 15.2812 13.0935L14.4687 14.1873C14.0625 14.7185 13.3125 14.8748 12.7187 14.531C8.68748 12.1248 6.18748 8.781 5.31248 7.43725C5.12498 7.156 5.06248 6.8435 5.12498 6.49975C5.18748 6.18725 5.37498 5.87475 5.65623 5.7185L6.81248 4.93725C6.87498 4.906 6.87498 4.87475 6.87498 4.8435C6.87498 4.81225 6.87498 4.781 6.84373 4.7185L4.93748 1.99975C4.90623 1.9685 4.81248 1.93725 4.74998 1.93725Z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 w-full whitespace-nowrap">
+                            <span class="block text-sm font-medium">Call Us</span>
+                            <h6 class="text-base font-semibold text-dark">
+                                360-779-2228
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<!--
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+<section class="relative bg-[url(/assets/images/hero-image-01.jpg)] bg-cover bg-center bg-no-repeat">
+    <div class="absolute inset-0 bg-white/75 bg-transparent sm:bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+    <img src="/assets/images/hero-image-01.jpg" alt="REHAU PVC Windows"
+         class="w-0 h-0 hidden object-cover object-center">
+    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+        <div class="sm:text-left">
+            <h1 class="text-3xl font-extrabold sm:text-5xl">
+                Unaprijedite svoj prostor sa
+                <strong class="block font-extrabold text-primary">
+                    REHAU prozorima.
+                </strong>
+            </h1>
+
+            <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                Iskusite vrhunski kvalitet, trajnost i inovativnost.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Product Showcase Section -->
+<section id="products" class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Explore Our Products</h2>
+
+        <!-- Product Cards (Dummy Data) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/images/products/profile.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Premium Casement Windows</h3>
+                <p class="text-gray-700">Energy-efficient and stylish casement windows for modern living.</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="/assets/images/products/rolo.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Rolo Shutters</h3>
+                <p class="text-gray-700">Timeless design with the latest in PVC window technology.</p>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/products/sliding.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Modern Sliding Windows</h3>
+                <p class="text-gray-700">Sleek and functional sliding windows for contemporary spaces.</p>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/products/doors.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Classic Doors</h3>
+                <p class="text-gray-700">Timeless design with the latest in PVC window technology.</p>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/products/garage-door.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Garage Doors</h3>
+                <p class="text-gray-700">Automated garage doors for your home</p>
+            </div>
+
+
+            <!-- Product Card 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/products/alu-fasada.png" alt="Product 1"
+                     class="w-full object-contain mb-4 rounded-lg">
+                <h3 class="text-xl font-bold mb-2">Alu-fasada</h3>
+                <p class="text-gray-700">Alu-fasada</p>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose REHAU Section -->
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto text-left">
+        <!-- Why Choose REHAU Card 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold mb-8">Why Choose REHAU PVC Windows?</h2>
+            <div class="flex items-center">
+                <iframe width="420" height="315"
+                        src="https://www.youtube.com/embed/mW_sTVXJZiQ?controls=1&autoplay=1&mute=1&loop=1&playlist=mW_sTVXJZiQ">
+                </iframe>
+                <span class="text-gray-700 ml-4 text-xl">As a vinyl extrusion company, our PVC window and door solutions are widely recognized
+            on both continents as the A-list choice for discerning manufacturers, contractors, architects, developers
+            and homeowners.
+
+            A bold statement, yes, but REHAU’s uncompromising attention to perfection extends to every stage of the
+            window and door ecosystem, including DESIGN, MATERIAL, EXTRUSION, TESTING, SERVICES and STYLE. While other
+            companies do one or even two stages well, none deliver on ALL OF THEM with the same level of measurable
+            quality and unwavering consistency as REHAU, starting with design. </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">About Us</h2>
+        <div class="flex items-center justify-center pb-8">
+            <p class="text-gray-700 pb-8">Some content about us, how we started and when?....</p>
+        </div>
+
+        <div class="flex items-center justify-center">
+            <img src="/assets/images/products/certificate.png" alt="Certificate"
+                 class="w-[200px] object-contain px-4 mx-auto">
+            <img src="/assets/images/products/certificate.png" alt="Certificate"
+                 class="w-[200px] object-contain px-4 mx-auto">
+            <img src="/assets/images/products/certificate.png" alt="Certificate"
+                 class="w-[200px] object-contain px-4 mx-auto">
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-blue-500 py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Imate pitanje? Kontaktirajte nas!</h2>
+        <!-- Dummy Contact Form -->
+        <form class="max-w-md mx-auto">
+            <div class="mb-4">
+                <input type="text" placeholder="Your Name" class="w-full p-2 rounded-md"/>
+            </div>
+            <div class="mb-4">
+                <input type="email" placeholder="Your Email" class="w-full p-2 rounded-md"/>
+            </div>
+            <div class="mb-6">
+                <textarea placeholder="Your Message" rows="4" class="w-full p-2 rounded-md"></textarea>
+            </div>
+            <button type="submit"
+                    class="bg-accent text-white w-full py-2 px-6 rounded-full hover:bg-blue-700 hover:text-white">Submit
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+        <div class="flex items-center justify-center pb-8">
+            <a href="https://facebook.com/glumcević" target="_blank" class="mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+            </a>
+            <a href="https://instagram.com/glumcevic" target="_blank" class="mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/glumcevic" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                </svg>
+            </a>
+        </div>
+
+        <p>&copy; 2023 Glumcevic. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
