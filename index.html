@@ -3,7 +3,6 @@
 <head>
     <title>Glumcevic</title>
     <meta name="description" content="corporate site">
-    >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/style.css" rel="stylesheet">
@@ -83,7 +82,7 @@
                 <img class="absolute inset-0 object-cover w-full h-full block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      src="assets/images/hero/hero-01.png" alt=""/>
                 <!-- Mask -->
-                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
                 <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
@@ -104,7 +103,7 @@
                  data-carousel-item>
                 <img src="assets/images/hero/hero-02.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
-                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
                 <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
@@ -125,7 +124,7 @@
                  data-carousel-item>
                 <img src="assets/images/hero/hero-03.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
-                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
                 <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
@@ -268,7 +267,7 @@
 </section>
 
 <!-- About Us Section -->
-<section id="about" class="bg-gray-200 py-16">
+<section id="about" class="bg-gray-100 py-16">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8">About Us</h2>
         <div class="flex items-center justify-center pb-8">
@@ -288,7 +287,7 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="bg-gray-400 py-16">
+<section id="contact" class="bg-gray-300 py-16">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold mb-8 text-white">Imate pitanje? Kontaktirajte nas!</h2>
         <!-- Dummy Contact Form -->
@@ -338,27 +337,26 @@
     (function setup(){
     const carouselElement = document.getElementById('default-carousel');
     const items = [
-    {
-        position: 0,
-        el: document.getElementById('slide-1'),
-    },
-    {
-        position: 1,
-        el: document.getElementById('slide-2'),
-    },
-    {
-        position: 2,
-        el: document.getElementById('slide-3'),
-    },
-];
+        {
+            position: 0,
+            el: document.getElementById('slide-1'),
+        },
+        {
+            position: 1,
+            el: document.getElementById('slide-2'),
+        },
+        {
+            position: 2,
+            el: document.getElementById('slide-3'),
+        },
+    ];
 
-// options with default values
 const options = {
     defaultPosition: 1,
-    interval: 4200,
+    interval: 5200,
 
     indicators: {
-        activeClasses: 'bg-white dark:bg-gray-800',
+        activeClasses: 'bg-white <dark:bg-acc></dark:bg-acc>',
         inactiveClasses:
             'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
         items: [
@@ -375,17 +373,6 @@ const options = {
                 el: document.getElementById('slide-dot-3'),
             },
         ],
-    },
-
-    // callback functions
-    onNext: () => {
-        console.log('next slider item is shown');
-    },
-    onPrev: () => {
-        console.log('previous slider item is shown');
-    },
-    onChange: () => {
-        console.log('new slider item has been shown');
     },
 };
 
