@@ -29,7 +29,7 @@
                         <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                         <span class="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                     </button>
-                    <nav class="absolute right-4 top-full z-20 w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none hidden">
+                    <nav class="absolute right-4 top-full z-20 w-full max-w-[250px] bg-white px-6 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 hidden">
                         <ul class="blcok lg:flex">
                             <li>
                                 <a href="javascript:void(0)"
@@ -73,27 +73,109 @@
 </header>
 
 <!-- Hero Section -->
-<!--
-  Heads up! 👋
 
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
--->
+<section class="relative overflow-hidden">
 
-<section class="relative overflow-hidden bg-cover bg-center bg-no-repeat"
-         style="background-image: url('assets/images/hero-image-01.jpg')">
-    <div class="absolute inset-0 bg-white/75 bg-transparent sm:bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
-        <div class="sm:text-left">
-            <h1 class="text-3xl font-extrabold sm:text-5xl">
-                Unaprijedite svoj prostor sa
-                <strong class="block font-extrabold text-primary">
-                    REHAU prozorima.
-                </strong>
-            </h1>
+    <div id="default-carousel"
+         class="relative w-full h-screen"
+         data-carousel="static">
+        <!-- Carousel wrapper-->
+        <div class="relative w-full h-full">
+            <!-- Item 1 -->
+            <div class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out" data-carousel-item>
+                <img class="absolute inset-0 object-cover w-full h-full" src="assets/images/hero/hero-01.png" alt=""/>
+                <!-- Mask -->
+                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                    <div class="sm:text-left">
+                        <h1 class="text-3xl font-extrabold sm:text-5xl">
+                            Energy efficient windows
+                            <strong class="block font-extrabold text-primary">
+                                for energy savings
+                            </strong>
+                        </h1>
 
-            <p class="mt-4 max-w-lg sm:text-xl/relaxed">
-                Iskusite vrhunski kvalitet, trajnost i inovativnost.
-            </p>
+                        <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                            Dobijete 8% na uštedi grijanja/hlađenja!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/images/hero/hero-02.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
+                <!-- Mask -->
+                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                    <div class="sm:text-left">
+                        <h1 class="text-3xl font-extrabold sm:text-5xl">
+                            Durable, over time no matter
+                            <strong class="block font-extrabold text-primary">
+                                what!
+                            </strong>
+                        </h1>
+
+                        <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                            Low maintainance, German quality, with 100 years...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="assets/images/hero/hero-03.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
+                <!-- Mask -->
+                <div class="absolute inset-0 w-full h-100 bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
+                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                    <div class="sm:text-left">
+                        <h1 class="text-3xl font-extrabold sm:text-5xl">
+                            Unaprijedite svoj prostor sa
+                            <strong class="block font-extrabold text-primary">
+                                REHAU prozorima.
+                            </strong>
+                        </h1>
+
+                        <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                            Iskusite vrhunski kvalitet, trajnost i inovativnost.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
+                                                                                  stroke-linejoin="round"
+                                                                                  stroke-width="2"
+                                                                                  d="M15 19l-7-7 7-7"></path></svg>
+                <span class="hidden">Previous</span>
+            </span>
+            </button>
+            <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
+                                                                                  stroke-linejoin="round"
+                                                                                  stroke-width="2"
+                                                                                  d="M9 5l7 7-7 7"></path></svg>
+                <span class="hidden">Next</span>
+            </span>
+            </button>
+            <!---->
         </div>
     </div>
 </section>
@@ -248,5 +330,12 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+<script>
+    const carouselElement = document.getElementById('default-carousel');
+    const carousel = new Carousel(carouselElement, {
+        loop: true,
+    })
+</script>
 </body>
 </html>

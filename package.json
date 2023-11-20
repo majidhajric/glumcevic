@@ -10,6 +10,7 @@
     "start": "serve"
   },
   "dependencies": {
+    "flowbite": "^2.1.1",
     "serve": "^10.0.1"
   },
   "author": "majidhajric@gmail.com",

@@ -2,7 +2,9 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+  "./**.{html,js}",
+  ],
   theme: {
     extend: {},
     colors: {
@@ -20,6 +22,7 @@ module.exports = {
       accent: '#8EB2FF'
     }
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
