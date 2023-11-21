@@ -5,9 +5,19 @@
     <meta name="description" content="corporate site">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/style.css" rel="stylesheet">
     <meta name="baseurl" content="/">
     <meta name="facebook-domain-verification" content="nb3c479gglml9b9pyrtyxg9xk5lcu4"/>
+    <link href="dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <style>
+        .swiper  .swiper-slide > .slide-info {
+            opacity: 0;
+            transition: all 2.3s easy-in-out;
+        }
+        .swiper  .swiper-slide-active > .slide-info {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="font-sans bg-gray-100">
@@ -73,17 +83,16 @@
 
 <!-- Hero Section -->
 <section class="relative overflow-hidden">
-    <div id="default-carousel" class="relative w-full h-screen" data-carousel="static">
+    <div id="default-swiper" class="swiper relative w-full h-screen" data-carousel="slide">
         <!-- Carousel wrapper-->
-        <div class="relative w-full h-full">
+        <div class="swiper-wrapper relative w-full h-full carousel-wrapper">
             <!-- Item 1 -->
-            <div id="slide-1" class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
+            <div id="slide-1" class="swiper-slide hidden bg-cover bg-center bg-no-repeat duration-700 ease-in-out"
                  data-carousel-item>
                 <img class="absolute inset-0 object-cover w-full h-full block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                     src="assets/images/hero/hero-01.png" alt=""/>
-                <!-- Mask -->
+                     src="assets/images/hero/hero-01.png" alt=""/><!-- Mask -->
                 <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Energy efficient windows
@@ -99,12 +108,13 @@
                 </div>
             </div>
             <!-- Item 2 -->
-            <div id="slide-2" class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
+            <div id="slide-2"
+                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
                  data-carousel-item>
                 <img src="assets/images/hero/hero-02.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
                 <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Durable, over time no matter
@@ -120,12 +130,13 @@
                 </div>
             </div>
             <!-- Item 3 -->
-            <div id="slide-3" class="bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
+            <div id="slide-3"
+                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
                  data-carousel-item>
                 <img src="assets/images/hero/hero-03.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
                 <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Unaprijedite svoj prostor sa
@@ -140,45 +151,14 @@
                     </div>
                 </div>
             </div>
-            <!-- Slider indicators -->
-            <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
-                <button id="slide-dot-1" type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                        aria-label="Slide 1"
-                        data-carousel-slide-to="0"></button>
-                <button id="slide-dot-2" type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                        aria-label="Slide 2"
-                        data-carousel-slide-to="1"></button>
-                <button id="slide-dot-3" type="button" class="w-3 h-3 rounded-full" aria-current="false"
-                        aria-label="Slide 3"
-                        data-carousel-slide-to="2"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button"
-                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-                    data-carousel-prev>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
-                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
-                                                                                  stroke-linejoin="round"
-                                                                                  stroke-width="2"
-                                                                                  d="M15 19l-7-7 7-7"></path></svg>
-                <span class="hidden">Previous</span>
-            </span>
-            </button>
-            <button type="button"
-                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-                    data-carousel-next>
-            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
-                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
-                                                                                  stroke-linejoin="round"
-                                                                                  stroke-width="2"
-                                                                                  d="M9 5l7 7-7 7"></path></svg>
-                <span class="hidden">Next</span>
-            </span>
-            </button>
-            <!---->
         </div>
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
 </section>
 
@@ -332,58 +312,22 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    (function setup(){
-    const carouselElement = document.getElementById('default-carousel');
-    const items = [
-        {
-            position: 0,
-            el: document.getElementById('slide-1'),
-        },
-        {
-            position: 1,
-            el: document.getElementById('slide-2'),
-        },
-        {
-            position: 2,
-            el: document.getElementById('slide-3'),
-        },
-    ];
-
-const options = {
-    defaultPosition: 1,
-    interval: 5200,
-
-    indicators: {
-        activeClasses: 'bg-white <dark:bg-acc></dark:bg-acc>',
-        inactiveClasses:
-            'bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800',
-        items: [
-            {
-                position: 0,
-                el: document.getElementById('slide-dot-1'),
-            },
-            {
-                position: 1,
-                el: document.getElementById('slide-dot-2'),
-            },
-            {
-                position: 2,
-                el: document.getElementById('slide-dot-3'),
-            },
-        ],
-    },
-};
-
-// instance options object
-const instanceOptions = {
-  id: 'default-carousel',
-  override: true
-};
-    const carousel = new Carousel(carouselElement, items, options, instanceOptions);
-    carousel.cycle();
-    })();
+    const swiper = new Swiper('.swiper', {
+         autoplay: {
+           delay: 5000,
+         },
+      loop: true,
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 </script>
 </body>
 </html>
