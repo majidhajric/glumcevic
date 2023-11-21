@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="baseurl" content="/">
     <meta name="facebook-domain-verification" content="nb3c479gglml9b9pyrtyxg9xk5lcu4"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link href="dist/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <style>
@@ -83,16 +85,15 @@
 
 <!-- Hero Section -->
 <section class="relative overflow-hidden">
-    <div id="default-swiper" class="swiper relative w-full h-screen" data-carousel="slide">
+    <div id="default-swiper" class="swiper relative w-full h-screen">
         <!-- Carousel wrapper-->
         <div class="swiper-wrapper relative w-full h-full carousel-wrapper">
             <!-- Item 1 -->
-            <div id="slide-1" class="swiper-slide hidden bg-cover bg-center bg-no-repeat duration-700 ease-in-out"
-                 data-carousel-item>
+            <div id="slide-1" class="swiper-slide hidden bg-cover bg-center bg-no-repeat">
                 <img class="absolute inset-0 object-cover w-full h-full block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                      src="assets/images/hero/hero-01.png" alt=""/><!-- Mask -->
-                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-t sm:from-white/90 sm:to-white/10"></div>
+                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end justify-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Energy efficient windows
@@ -109,13 +110,12 @@
             </div>
             <!-- Item 2 -->
             <div id="slide-2"
-                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
-                 data-carousel-item>
+                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden">
                 <img src="assets/images/hero/hero-02.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
                 <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
-                    <div class="sm:text-left">
+                <div class="slide-info relative ml-auto mr-0 max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-start justify-start">
+                    <div class="sm:text-right">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Durable, over time no matter
                             <strong class="block font-extrabold text-primary">
@@ -131,12 +131,11 @@
             </div>
             <!-- Item 3 -->
             <div id="slide-3"
-                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden duration-700 ease-in-out"
-                 data-carousel-item>
+                 class="swiper-slide hidden bg-cover bg-center bg-no-repeat hidden">
                 <img src="assets/images/hero/hero-03.png" alt="" class="absolute inset-0 object-cover w-full h-full"/>
                 <!-- Mask -->
-                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-r sm:from-white/90 sm:to-white/10"></div>
-                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end">
+                <div class="absolute inset-0 w-full h-full bg-transparent bg-gradient-to-t sm:from-white/90 sm:to-white/10"></div>
+                <div class="slide-info relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-end justify-end">
                     <div class="sm:text-left">
                         <h1 class="text-3xl font-extrabold sm:text-5xl">
                             Unaprijedite svoj prostor sa
@@ -170,7 +169,7 @@
         <!-- Product Cards (Dummy Data) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Product Card 1 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/profile.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Premium Casement Windows</h3>
@@ -178,7 +177,7 @@
             </div>
 
             <!-- Product Card 2 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/rolo.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Rolo Shutters</h3>
@@ -186,7 +185,7 @@
             </div>
 
             <!-- Product Card 3 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/sliding.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Modern Sliding Windows</h3>
@@ -194,7 +193,7 @@
             </div>
 
             <!-- Product Card 4 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/doors.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Classic Doors</h3>
@@ -202,7 +201,7 @@
             </div>
 
             <!-- Product Card 5 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/garage-door.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Garage Doors</h3>
@@ -211,14 +210,12 @@
 
 
             <!-- Product Card 6 -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out">
                 <img src="assets/images/products/alu-fasada.png" alt="Product 1"
                      class="w-full object-contain mb-4 rounded-lg">
                 <h3 class="text-xl font-bold mb-2">Alu-fasada</h3>
                 <p class="text-gray-700">Alu-fasada</p>
             </div>
-
-
         </div>
     </div>
 </section>
@@ -254,24 +251,36 @@
             <p class="text-gray-700 pb-8">Some content about us, how we started and when?....</p>
         </div>
 
-        <div class="flex items-center justify-center">
-            <img src="assets/images/products/certificate.png" alt="Certificate"
-                 class="w-[200px] object-contain px-4 mx-auto">
-            <img src="assets/images/products/certificate.png" alt="Certificate"
-                 class="w-[200px] object-contain px-4 mx-auto">
-            <img src="assets/images/products/certificate.png" alt="Certificate"
-                 class="w-[200px] object-contain px-4 mx-auto">
+        <div id="certificate-swiper" class="swiper relative h-[200px] ">
+            <div class="swiper-wrapper">
+                <img src="assets/images/products/certificate.png" alt="Certificate"
+                     class="swiper-slide w-[200px] object-contain px-4 mx-auto">
+                <img src="assets/images/products/certificate.png" alt="Certificate"
+                     class="swiper-slide w-[200px] object-contain px-4 mx-auto">
+                <img src="assets/images/products/certificate.png" alt="Certificate"
+                     class="swiper-slide w-[200px] object-contain px-4 mx-auto">
+                <img src="assets/images/products/certificate.png" alt="Certificate"
+                     class="swiper-slide w-[200px] object-contain px-4 mx-auto">
+            </div>
         </div>
-
     </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="bg-gray-300 py-16">
+<section id="contact" class="bg-gray-100 py-16">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-8 text-white">Imate pitanje? Kontaktirajte nas!</h2>
+        <h2 class="text-3xl font-bold mb-8">
+            <span class="material-symbols-outlined">contact_support</span>&nbsp;Imate pitanje?</h2>
+
+        <a href="tel:+381611111111" class="text-gray-700">
+            <button type="button"
+                    class="bg-accent text-white py-2 px-6 rounded-full hover:bg-blue-700 hover:text-white">
+                Pozovite nas!
+            </button>
+        </a>
+        <p class="mt-4 pt-6 text-gray-700">ili ostavite poruku:</p>
         <!-- Dummy Contact Form -->
-        <form class="max-w-md mx-auto">
+        <form class="max-w-md mx-auto mt-6">
             <div class="mb-4">
                 <input type="text" placeholder="Your Name" class="w-full p-2 rounded-md"/>
             </div>
@@ -314,7 +323,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper('.swiper', {
+    const defaultSwiper = new Swiper('#default-swiper', {
          autoplay: {
            delay: 5000,
          },
@@ -328,6 +337,17 @@
         prevEl: '.swiper-button-prev',
       },
     });
+
+    const certificateSwiper = new Swiper('#certificate-swiper', {
+        autoplay: {
+           delay: 5000,
+         },
+      slidesPerView: 3,
+    })
+</script>
+<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+<script type="application/javascript">
+    initFlowbite();
 </script>
 </body>
 </html>

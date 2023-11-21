@@ -4,6 +4,7 @@ const colors = require('tailwindcss/colors');
 module.exports = {
   content: [
   "./**.{html,js}",
+  "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
@@ -21,8 +22,8 @@ module.exports = {
       secondary: '#3162FF',
       accent: '#8EB2FF'
     }
-  },
-  plugins: [
-  ],
+  }, plugins: [
+            require('flowbite/plugin')
+        ]
 }
 
